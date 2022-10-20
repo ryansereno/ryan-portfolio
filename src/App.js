@@ -3,6 +3,12 @@ import "./App.css";
 import FadeInSection from "./components/FadeInSection";
 
 function App() {
+  const current = new Date();
+
+  const time = current.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
   const frontendText = "Frontend";
   let frontendHtml = [];
   for (let i = 0; i < frontendText.length; i++) {
@@ -90,6 +96,15 @@ function App() {
             <div className="project"></div>
           </div>
         </section>
+      </FadeInSection>
+      <FadeInSection>
+        <footer>
+          <p>
+            It's {time} <br />
+            Still not too late to send me a message:)
+          </p>
+<a href = "mailto: ryan.a.sereno@gmail.com">ryan.a.sereno@gmail.com</a>
+        </footer>
       </FadeInSection>
     </Fragment>
   );
