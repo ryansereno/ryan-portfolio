@@ -63,45 +63,41 @@ function App() {
         <section>
           <h3>Skillset</h3>
           <div className="skill-section">
-            <div className="skill-row">
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=react" />
-                <p>React</p>
-              </div>
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=javascript" />
-                <p>Javascript</p>
-              </div>
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=typescript" />
-                <p>Typescript</p>
-              </div>
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=css" />
-                <p>CSS</p>
-              </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=react" />
+              <p>React</p>
             </div>
-            <div className="skill-row">
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=nextjs" />
-                <p>Next.js</p>
-              </div>
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=nodejs" />
-                <p>Node</p>
-              </div>
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=mongodb" />
-                <p>MongoDB</p>
-              </div>
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=mysql" />
-                <p>MySql</p>
-              </div>
-              <div className="skill">
-                <img src="https://skills.thijs.gg/icons?i=ai" />
-                <p>Illustrator</p>
-              </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=javascript" />
+              <p>Javascript</p>
+            </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=typescript" />
+              <p>Typescript</p>
+            </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=css" />
+              <p>CSS</p>
+            </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=nextjs" />
+              <p>Next.js</p>
+            </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=nodejs" />
+              <p>Node</p>
+            </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=mongodb" />
+              <p>MongoDB</p>
+            </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=mysql" />
+              <p>MySql</p>
+            </div>
+            <div className="skill">
+              <img src="https://skills.thijs.gg/icons?i=ai" />
+              <p>Illustrator</p>
             </div>
           </div>
         </section>
@@ -135,13 +131,13 @@ function App() {
           </div>
         </section>
       </FadeInSection>
-        <footer>
-          <p>
-            It's {time} <br />
-            Still not too late to send me a message:)
-          </p>
-          <a href="mailto: ryan.a.sereno@gmail.com">ryan.a.sereno@gmail.com</a>
-        </footer>
+      <footer>
+        <p>
+          It's {time} <br />
+          Still not too late to send me a message:)
+        </p>
+        <a href="mailto: ryan.a.sereno@gmail.com">ryan.a.sereno@gmail.com</a>
+      </footer>
     </Fragment>
   );
 }
