@@ -7,20 +7,9 @@ import palmLogo from "./assets/palm-logo.png";
 import butterLogo from "./assets/butter-logo.jpg";
 import "./App.css";
 import FadeInSection from "./components/FadeInSection";
+import Clock from "./components/Clock";
 
 function App() {
-  const current = new Date();
-  function formatAMPM(date) {
-    var hours = date.getHours();
-    var minutes = date.getMinutes();
-    var ampm = hours >= 12 ? "pm" : "am";
-    hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    var strTime = hours + ":" + minutes + " " + ampm;
-    return strTime;
-  }
-  const time = formatAMPM(new Date());
   const frontendText = "Frontend";
   let frontendHtml = [];
   for (let i = 0; i < frontendText.length; i++) {
@@ -52,10 +41,10 @@ function App() {
             <br />
             <br />
             I use my years of professional experience as a scientist to inform
-            my engineering process around data and statistics.
+            my engineering process around data and computation.
             <br />
-            My visual design experience allows me to package technology into an
-            intuitive and responsive UI.
+            Using my visual design experience, I assemble technology into
+            intuitive and responsive UI's.
           </p>
         </div>
       </FadeInSection>
@@ -106,37 +95,38 @@ function App() {
         <section>
           <h3>Work</h3>
           <div className="portfolio-section">
-            <div className="project">
-              <div className="logo-background">
-                <img className="logo" src={quartetLogo} alt="" />
-              </div>
-              <img src={quartetImage} alt="" />
-            </div>
-            <div className="project">
-              <div className="logo-background">
-                <img className="logo" src={palmLogo} alt="" />
+            <a href="https://quartet.ai" className="project">
+                <div className="logo-background">
+                  <img className="logo" src={quartetLogo} alt="" />
+                </div>
+                <img src={quartetImage} alt="" />
+              </a>
+            <a href="https://palm.condos" className="project">
+                <div className="logo-background">
+                  <img className="logo" src={palmLogo} alt="" />
+                  <img className="logo" src="" alt="" />
+                </div>
+                <img src={palmImage} alt="" />
                 <img className="logo" src="" alt="" />
-              </div>
-              <img src={palmImage} alt="" />
-              <img className="logo" src="" alt="" />
-            </div>
-            <div className="project">
+              </a>
+
+            <a href="https://gifbutter.io" className="project">
               <div className="logo-background">
                 <img className="logo" src={butterLogo} alt="" />
                 <img className="logo" src="" alt="" />
               </div>
               <img src={butterImage} alt="" />
               <img className="logo" src="" alt="" />
-            </div>
+            </a>
           </div>
         </section>
       </FadeInSection>
       <footer>
         <p>
-          It's {time} <br />
+          It's <Clock /> <br />
           Still not too late to send me a message:)
         </p>
-        <a href="mailto: ryan.a.sereno@gmail.com">ryan.a.sereno@gmail.com</a>
+        <a href="mailto:ryan.a.sereno@gmail.com">ryan.a.sereno@gmail.com</a>
       </footer>
     </Fragment>
   );
