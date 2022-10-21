@@ -10,11 +10,17 @@ import FadeInSection from "./components/FadeInSection";
 
 function App() {
   const current = new Date();
-
-  const time = current.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+function formatAMPM(date) {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+  return strTime;
+}
+  const time = formatAMPM(new Date)
   const frontendText = "Frontend";
   let frontendHtml = [];
   for (let i = 0; i < frontendText.length; i++) {
@@ -43,6 +49,10 @@ function App() {
             Building beautiful, intuitive software.
             <br />
             Specialized in React development and UI design.
+            <br />
+            <br />
+            I use my years of professional experience as a scientist to inform my design process around data and statistics.
+            My design experience allows me to package the technology into an intuitive product.
           </p>
         </div>
       </FadeInSection>
