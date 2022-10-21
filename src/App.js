@@ -10,17 +10,17 @@ import FadeInSection from "./components/FadeInSection";
 
 function App() {
   const current = new Date();
-function formatAMPM(date) {
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? 'pm' : 'am';
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? '0'+minutes : minutes;
-  var strTime = hours + ':' + minutes + ' ' + ampm;
-  return strTime;
-}
-  const time = formatAMPM(new Date)
+  function formatAMPM(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? "pm" : "am";
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    var strTime = hours + ":" + minutes + " " + ampm;
+    return strTime;
+  }
+  const time = formatAMPM(new Date());
   const frontendText = "Frontend";
   let frontendHtml = [];
   for (let i = 0; i < frontendText.length; i++) {
@@ -43,16 +43,19 @@ function formatAMPM(date) {
         </h2>
       </div>
       <FadeInSection>
-        <div className="about">
+        <div className="about-section">
           <p>
             Organic chemist turned software engineer. <br />
             Building beautiful, intuitive software.
             <br />
-            Specialized in React development and UI design.
+            Specializing in React development and UI design.
             <br />
             <br />
-            I use my years of professional experience as a scientist to inform my design process around data and statistics.
-            My design experience allows me to package the technology into an intuitive product.
+            I use my years of professional experience as a scientist to inform
+            my engineering process around data and statistics.
+            <br />
+            My visual design experience allows me to package technology into an
+            intuitive and responsive UI.
           </p>
         </div>
       </FadeInSection>
@@ -106,34 +109,32 @@ function formatAMPM(date) {
       <FadeInSection>
         <section>
           <h3>Work</h3>
-          <div className="portfolio">
+          <div className="portfolio-section">
             <div className="project">
               <div className="logo-background">
-
-              <img className="logo" src={quartetLogo} alt="" />
+                <img className="logo" src={quartetLogo} alt="" />
               </div>
               <img src={quartetImage} alt="" />
             </div>
             <div className="project">
               <div className="logo-background">
-              <img className="logo" src={palmLogo} alt="" />
-              <img className="logo" src="" alt="" />
-            </div>
+                <img className="logo" src={palmLogo} alt="" />
+                <img className="logo" src="" alt="" />
+              </div>
               <img src={palmImage} alt="" />
               <img className="logo" src="" alt="" />
             </div>
             <div className="project">
               <div className="logo-background">
-              <img className="logo" src={butterLogo} alt="" />
-              <img className="logo" src="" alt="" />
-            </div>
+                <img className="logo" src={butterLogo} alt="" />
+                <img className="logo" src="" alt="" />
+              </div>
               <img src={butterImage} alt="" />
               <img className="logo" src="" alt="" />
             </div>
           </div>
         </section>
       </FadeInSection>
-      <FadeInSection>
         <footer>
           <p>
             It's {time} <br />
@@ -141,7 +142,6 @@ function formatAMPM(date) {
           </p>
           <a href="mailto: ryan.a.sereno@gmail.com">ryan.a.sereno@gmail.com</a>
         </footer>
-      </FadeInSection>
     </Fragment>
   );
 }

@@ -1,3 +1,7 @@
+html,
+body {
+  width: 100%;
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -28,13 +32,12 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.about {
+.about-section {
   display: flex;
   justify-content: center;
-  height: 40vh;
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
-  margin-bottom: 200px;
+  padding-bottom: 100px;
 }
 p {
   font-size: 2rem;
@@ -48,7 +51,7 @@ section {
   text-align: center;
 }
 .skill-section {
-  height: 60vh;
+  padding-bottom: 100px;
 }
 .skill-row {
   display: flex;
@@ -68,7 +71,7 @@ section {
 .skill p {
   font-size: 1.2rem;
 }
-.portfolio {
+.portfolio-section {
   width: 80vw;
   margin: auto;
   display: grid;
@@ -168,6 +171,7 @@ h3 {
   font-size: 3rem;
   font-family: Nunito, sans-serif;
   font-variation-settings: "wght" 700;
+  margin-block-start: 0;
 }
 .text-span {
   font-size: 0.8em;
@@ -205,4 +209,36 @@ h3 {
   color: var(--teal);
 }
 @media (max-width: 870px) {
+  html,
+  body {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  header h1 {
+    padding: 0;
+  }
+  h2{
+    font-size:5rem;
+  }
+  .about-section {
+    height: unset;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  p{
+    font-size: 1.3rem;
+  }
+  .portfolio-section{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .project {
+    width: 60vw;
+    height: 60vw;
+    justify-self: center;
+  }
 }
