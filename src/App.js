@@ -37,7 +37,8 @@ function App() {
             Organic chemist turned software engineer. <br />
             Building beautiful, intuitive software.
             <br />
-            Specializing in React development and UI design.
+            Specializing in React development and <br />
+            UI design.
             <br />
             <br />
             I use my years of professional experience as a scientist to inform
@@ -96,19 +97,19 @@ function App() {
           <h3>Work</h3>
           <div className="portfolio-section">
             <a href="https://quartet.ai" className="project">
-                <div className="logo-background">
-                  <img className="logo" src={quartetLogo} alt="" />
-                </div>
-                <img src={quartetImage} alt="" />
-              </a>
+              <div className="logo-background">
+                <img className="logo" src={quartetLogo} alt="" />
+              </div>
+              <img src={quartetImage} alt="" />
+            </a>
             <a href="https://palm.condos" className="project">
-                <div className="logo-background">
-                  <img className="logo" src={palmLogo} alt="" />
-                  <img className="logo" src="" alt="" />
-                </div>
-                <img src={palmImage} alt="" />
+              <div className="logo-background">
+                <img className="logo" src={palmLogo} alt="" />
                 <img className="logo" src="" alt="" />
-              </a>
+              </div>
+              <img src={palmImage} alt="" />
+              <img className="logo" src="" alt="" />
+            </a>
 
             <a href="https://gifbutter.io" className="project">
               <div className="logo-background">
