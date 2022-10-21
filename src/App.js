@@ -1,4 +1,10 @@
 import { Fragment } from "react";
+import quartetImage from "./assets/quartet.png";
+import palmImage from "./assets/palm.png";
+import butterImage from "./assets/butter.png";
+import quartetLogo from "./assets/quartet-logo.jpg";
+import palmLogo from "./assets/palm-logo.png";
+import butterLogo from "./assets/butter-logo.jpg";
 import "./App.css";
 import FadeInSection from "./components/FadeInSection";
 
@@ -91,9 +97,29 @@ function App() {
         <section>
           <h3>Work</h3>
           <div className="portfolio">
-            <div className="project"></div>
-            <div className="project"></div>
-            <div className="project"></div>
+            <div className="project">
+              <div className="logo-background">
+
+              <img className="logo" src={quartetLogo} alt="" />
+              </div>
+              <img src={quartetImage} alt="" />
+            </div>
+            <div className="project">
+              <div className="logo-background">
+              <img className="logo" src={palmLogo} alt="" />
+              <img className="logo" src="" alt="" />
+            </div>
+              <img src={palmImage} alt="" />
+              <img className="logo" src="" alt="" />
+            </div>
+            <div className="project">
+              <div className="logo-background">
+              <img className="logo" src={butterLogo} alt="" />
+              <img className="logo" src="" alt="" />
+            </div>
+              <img src={butterImage} alt="" />
+              <img className="logo" src="" alt="" />
+            </div>
           </div>
         </section>
       </FadeInSection>
@@ -103,7 +129,7 @@ function App() {
             It's {time} <br />
             Still not too late to send me a message:)
           </p>
-<a href = "mailto: ryan.a.sereno@gmail.com">ryan.a.sereno@gmail.com</a>
+          <a href="mailto: ryan.a.sereno@gmail.com">ryan.a.sereno@gmail.com</a>
         </footer>
       </FadeInSection>
     </Fragment>
