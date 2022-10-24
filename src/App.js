@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import quartetImage from "./assets/quartet.png";
+import quartetImage from "./assets/quartet-mockup.png";
 import palmImage from "./assets/palm.png";
 import butterImage from "./assets/butter.png";
 import quartetLogo from "./assets/quartet-logo.jpg";
@@ -37,8 +37,7 @@ function App() {
             Organic chemist turned software engineer. <br />
             Building beautiful, intuitive software.
             <br />
-            Specializing in React development and <br />
-            UI design.
+            Specializing in React development and UI design.
             <br />
             <br />
             I use my years of professional experience as a scientist to inform
