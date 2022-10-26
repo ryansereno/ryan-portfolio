@@ -19,6 +19,7 @@ function App() {
       </span>
     );
   }
+
   return (
     <Fragment>
       <header>
@@ -95,13 +96,13 @@ function App() {
         <section>
           <h3>Work</h3>
           <div className="portfolio-section">
-            <a href="https://quartet.ai" className="project">
+            <a href="https://quartet.ai" className="project" target="_blank" rel="noopener noreferrer">
               <div className="logo-background">
                 <img className="logo" src={quartetLogo} alt="" />
               </div>
               <img src={quartetImage} alt="" />
             </a>
-            <a href="https://palm.condos" className="project">
+            <a href="https://palm.condos" className="project" target="_blank" rel="noopener noreferrer">
               <div className="logo-background">
                 <img className="logo" src={palmLogo} alt="" />
                 <img className="logo" src="" alt="" />
@@ -110,7 +111,7 @@ function App() {
               <img className="logo" src="" alt="" />
             </a>
 
-            <a href="https://gifbutter.io" className="project">
+            <a href="https://gifbutter.io" className="project" target="_blank" rel="noopener noreferrer">
               <div className="logo-background">
                 <img className="logo" src={butterLogo} alt="" />
                 <img className="logo" src="" alt="" />
