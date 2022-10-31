@@ -10,12 +10,11 @@ import FadeInSection from "./components/FadeInSection";
 import Clock from "./components/Clock";
 
 function App() {
-  const frontendText = "Frontend";
   let frontendHtml = [];
-  for (let i = 0; i < frontendText.length; i++) {
+  for (let letter of 'Frontend') {
     frontendHtml.push(
-      <span key={i} className="header-letter">
-        {frontendText[i]}
+      <span key={letter} className="header-letter">
+        {letter}
       </span>
     );
   }
