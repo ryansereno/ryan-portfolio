@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import "./App.css";
 import FadeInSection from "./components/FadeInSection";
 import Header from "./components/Header";
@@ -7,10 +6,11 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
+import Container from "./components/Container";
 
 function App() {
   return (
-    <Fragment>
+    <Container>
       <Header />
       <MainTitle />
 
@@ -28,7 +28,7 @@ function App() {
 
       <Footer />
 
-    </Fragment>
+    </Container>
   );
 }
 

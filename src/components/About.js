@@ -1,6 +1,7 @@
+import StyledAbout from "./styles/About.styled";
 const About = () => {
   return (
-    <div className="about-section">
+    <StyledAbout>
       <p>
         Organic chemist turned software engineer. <br />
         Building beautiful, intuitive software.
@@ -14,8 +15,8 @@ const About = () => {
         Using my visual design experience, I assemble technology into intuitive
         and responsive UI's.
       </p>
-    </div>
+    </StyledAbout>
   );
 };
 
-export default About
+export default About;

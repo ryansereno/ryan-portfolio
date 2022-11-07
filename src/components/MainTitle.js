@@ -1,3 +1,4 @@
+import StyledTitle from './styles/Title.styled'
 const MainTitle = (props) => {
   let multiColorTitle = [];
   for (let letter of "Frontend") {
@@ -9,13 +10,13 @@ const MainTitle = (props) => {
   }
 
   return (
-    <div className="main-title">
+    <StyledTitle >
       <h2>
         {multiColorTitle}&nbsp;
         <br />
         Engineer
       </h2>
-    </div>
+    </StyledTitle>
   );
 };
 

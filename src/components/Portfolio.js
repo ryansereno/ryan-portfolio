@@ -1,13 +1,13 @@
-
 import quartetImage from "../assets/quartet-mockup.png";
 import palmImage from "../assets/palm.png";
 import butterImage from "../assets/butter.png";
 import quartetLogo from "../assets/quartet-logo.jpg";
 import palmLogo from "../assets/palm-logo.png";
 import butterLogo from "../assets/butter-logo.jpg";
+import PortfolioStyled from "./styles/Portfolio.styles";
 const Portfolio = () => {
   return (
-    <section>
+    <PortfolioStyled>
       <h3>Work</h3>
       <div className="portfolio-section">
         <a
@@ -49,7 +49,7 @@ const Portfolio = () => {
           <img className="logo" src="" alt="" />
         </a>
       </div>
-    </section>
+    </PortfolioStyled>
   );
 };
-export default Portfolio
+export default Portfolio;

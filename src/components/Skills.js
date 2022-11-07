@@ -1,6 +1,7 @@
+import SkillsStyled from './styles/Skills.styles'
 const Skills = () => {
   return (
-    <section>
+    <SkillsStyled>
       <h3>Skillset</h3>
       <div className="skill-section">
         <div className="skill">
@@ -40,7 +41,7 @@ const Skills = () => {
           <p>Illustrator</p>
         </div>
       </div>
-    </section>
+    </SkillsStyled>
   );
 };
 export default Skills

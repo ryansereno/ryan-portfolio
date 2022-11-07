@@ -1,9 +1,10 @@
+import {StyledHeader} from './styles/Header.styled'
 const Header = () =>{
   return(
 
-      <header>
+      <StyledHeader>
         <h1>Ryan Sereno</h1>
-      </header>
+      </StyledHeader>
   )
 }
 export default Header
