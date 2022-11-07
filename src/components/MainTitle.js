@@ -3,7 +3,7 @@ const MainTitle = (props) => {
   let multiColorTitle = [];
   for (let letter of "Frontend") {
     multiColorTitle.push(
-      <span key={letter} className="header-letter">
+      <span key={letter + Math.random()} className="header-letter">
         {letter}
       </span>
     );

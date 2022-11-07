@@ -8,7 +8,6 @@ const StyledTitle = styled.div`
 h2 {
   margin: auto;
   font-size: 8rem;
-  color: white;
   font-family: Nunito, sans-serif;
   font-variation-settings: "wght" 710;
   line-height: 0.8em;

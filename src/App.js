@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import FadeInSection from "./components/FadeInSection";
 import Header from "./components/Header";
@@ -7,28 +8,41 @@ import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Container from "./components/Container";
+import {ThemeProvider} from "styled-components";
+import { GlobalStyles } from "./components/globalStyles";
+import { lightTheme, darkTheme } from "./components/Theme"
 
 function App() {
+  const [darkModeOn, setDarkModeOn] = useState(false);
+  const toggleTheme = () => {
+    setDarkModeOn((prevState) => !prevState);
+  };
+    console.log('dark mode is on? ', darkModeOn)
   return (
-    <Container>
-      <Header />
-      <MainTitle />
+    <ThemeProvider theme={!darkModeOn ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      
+      <Container>
+        <Header toggleTheme={toggleTheme} />
 
-      <FadeInSection>
-        <About />
-      </FadeInSection>
+        <MainTitle />
 
-      <FadeInSection>
-        <Skills />
-      </FadeInSection>
+        <FadeInSection>
+          <About />
+        </FadeInSection>
 
-      <FadeInSection>
-        <Portfolio />
-      </FadeInSection>
+        <FadeInSection>
+          <Skills />
+        </FadeInSection>
 
-      <Footer />
+        <FadeInSection>
+          <Portfolio />
+        </FadeInSection>
 
-    </Container>
+        <Footer />
+      </Container>
+      </ThemeProvider >
+      
   );
 }
 
