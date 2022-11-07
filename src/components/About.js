@@ -1,4 +1,7 @@
 import StyledAbout from "./styles/About.styled";
+import sparcLogo from '../assets/sparc_logo.png'
+import quartetLogo from '../assets/Quartet logo small.jpeg'
+import palmLogo from '../assets/palm-logo.png'
 const About = () => {
   return (
     <StyledAbout>
@@ -12,9 +15,16 @@ const About = () => {
         I use my years of professional experience as a scientist to inform my
         engineering process around data and computation.
         <br />
-        Using my visual design experience, I assemble technology into intuitive
-        and responsive UI's.
-      </p>
+        <br />
+        Using UX best practices and my visual design experience, I assemble software into intuitive
+        and responsive interfaces.
+        <br />
+        <br />
+        I joined <img src={sparcLogo} alt="" height='40px' /> in 2017 to
+        design their GMP manufacturing facility and data pipelines. In 2019, I began building Quartet <img src={quartetLogo} alt="" height='40px'/>, paving
+        the way for standardized laboratory data in California. As of 2022, I am leading the engineering of the
+        Palm <img src={palmLogo} alt="" height='40px'/> projct management platform.
+      </p> 
     </StyledAbout>
   );
 };

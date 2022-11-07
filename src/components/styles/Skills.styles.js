@@ -1,9 +1,11 @@
 import styled from "styled-components";
 const SkillsStyled = styled.section`
   height: 60vh;
-  min-height:600px;
+  min-height: 600px;
   text-align: center;
-
+  span {
+    display: flex;
+  }
   .skill-section {
     text-align: center;
     padding-bottom: 100px;

@@ -1,4 +1,4 @@
-import SkillsStyled from './styles/Skills.styles'
+import SkillsStyled from "./styles/Skills.styles";
 const Skills = () => {
   return (
     <SkillsStyled>
@@ -9,11 +9,17 @@ const Skills = () => {
           <p>React</p>
         </div>
         <div className="skill">
-          <img src="https://skills.thijs.gg/icons?i=javascript" alt="Javascript" />
+          <img
+            src="https://skills.thijs.gg/icons?i=javascript"
+            alt="Javascript"
+          />
           <p>Javascript</p>
         </div>
         <div className="skill">
-          <img src="https://skills.thijs.gg/icons?i=typescript" alt="Typescript" />
+          <img
+            src="https://skills.thijs.gg/icons?i=typescript"
+            alt="Typescript"
+          />
           <p>Typescript</p>
         </div>
         <div className="skill">
@@ -28,20 +34,25 @@ const Skills = () => {
           <img src="https://skills.thijs.gg/icons?i=nodejs" alt="Nodejs" />
           <p>Node</p>
         </div>
-        <div className="skill">
-          <img src="https://skills.thijs.gg/icons?i=mongodb" alt="Mongodb" />
-          <p>MongoDB</p>
-        </div>
-        <div className="skill">
-          <img src="https://skills.thijs.gg/icons?i=mysql" alt="Mysql" />
-          <p>MySql</p>
-        </div>
-        <div className="skill">
-          <img src="https://skills.thijs.gg/icons?i=ai" alt="Adobe Illustrator" />
-          <p>Illustrator</p>
-        </div>
+        <span>
+          <div className="skill">
+            <img src="https://skills.thijs.gg/icons?i=mongodb" alt="Mongodb" />
+            <p>MongoDB</p>
+          </div>
+          <div className="skill">
+            <img src="https://skills.thijs.gg/icons?i=mysql" alt="Mysql" />
+            <p>MySql</p>
+          </div>
+          <div className="skill">
+            <img
+              src="https://skills.thijs.gg/icons?i=ai"
+              alt="Adobe Illustrator"
+            />
+            <p>Illustrator</p>
+          </div>
+        </span>
       </div>
     </SkillsStyled>
   );
 };
-export default Skills
+export default Skills;
