@@ -12,6 +12,14 @@ export const StyledHeader = styled.header`
     font-size: 3em;
     display: inline-block;
   }
+  .button-container{
+  display: flex;
+    align-items: center;
+  }
+@media (max-width: 600px) {
+.social-icon{
+display:none;
+}}
   .switch {
     position: relative;
     display: inline-block;

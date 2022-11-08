@@ -53,6 +53,7 @@ footer a {
   color: ${({ theme }) => theme.text};
   font-size: 1.7rem;
   font-family: Nunito, sans-serif;
+  margin-bottom:10px;
 }
 footer a:hover {
   transition: ease-in 150ms;
@@ -64,4 +65,13 @@ h3 {
   font-variation-settings: "wght" 700;
   margin-block-start: 0;
 }
-`
+
+  .button-container-footer{
+  display: flex;
+    align-items: center;
+  }
+@media (min-width: 600px) {
+.button-container-footer{
+display:none;
+}}
+`;

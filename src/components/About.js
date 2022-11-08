@@ -20,10 +20,10 @@ const About = () => {
         and responsive interfaces.
         <br />
         <br />
-        I joined <img src={sparcLogo} alt="" height='40px' /> in 2017 to
-        design their GMP manufacturing facility and data pipelines. In 2019, I began building Quartet <img src={quartetLogo} alt="" height='40px'/>, paving
+        I joined <img src={sparcLogo} alt=""  /> in 2017 to
+        design their GMP manufacturing facility and data pipelines. In 2019, I began building Quartet <img src={quartetLogo} alt="" />, paving
         the way for standardized laboratory data in California. As of 2022, I am leading the engineering of the
-        Palm <img src={palmLogo} alt="" height='40px'/> projct management platform.
+        Palm <img src={palmLogo} alt="" /> project management platform.
       </p> 
     </StyledAbout>
   );

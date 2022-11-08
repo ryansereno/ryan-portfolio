@@ -12,6 +12,10 @@ const StyledAbout = styled.div`
   img {
     vertical-align: middle;
     border-radius: 5px;
+    height:30px;
+  }
+  img:nth-of-type(1){
+  border: 2px solid #1595d3;
   }
   @media (max-width: 870px) {
     padding-left: 10px;
