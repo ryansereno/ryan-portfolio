@@ -7,11 +7,15 @@ const StyledAbout = styled.div`
   justify-content: center;
   max-width: 700px;
   margin: auto;
-margin-bottom:100px;
+  margin-bottom: 100px;
 
-  img{
-  vertical-align: middle;
-  border-radius:5px
+  img {
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+  @media (max-width: 870px) {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 `;
 export default StyledAbout;

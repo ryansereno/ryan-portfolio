@@ -31,7 +31,7 @@ body {
   --dark-blue: #105b95;
 }
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: Nunito, sans-serif;
 }
 header {
@@ -43,7 +43,6 @@ footer {
   justify-items: center;
   align-items: center;
   flex-direction: column;
-  height: 40vh;
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
@@ -63,32 +62,5 @@ h3 {
   font-family: Nunito, sans-serif;
   font-variation-settings: "wght" 700;
   margin-block-start: 0;
-}
-@media (max-width: 870px) {
-  html,
-  body {
-    width: 100%;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  p {
-    font-size: 1.3rem;
-  }
-  .portfolio-section {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-  }
-  .project {
-    width: 60vw;
-    height: 60vw;
-    justify-self: center;
-  }
-  .skill-section {
-    grid-template-columns: repeat(auto-fit, minmax(116px, 1fr));
-    max-width: none;
-  }
 }
 `
