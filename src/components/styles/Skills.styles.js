@@ -1,7 +1,7 @@
 import styled from "styled-components";
 const SkillsStyled = styled.section`
-  height: 50vh;
-  min-height: 570px;
+display: flex;
+    flex-direction: column;
   text-align: center;
   span {
     display: flex;
@@ -18,7 +18,7 @@ const SkillsStyled = styled.section`
   }
 
   .skill {
-  width:75px;
+    width: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,5 +33,8 @@ const SkillsStyled = styled.section`
   .skill p {
     font-size: 1.2rem;
   }
+  @media (max-width: 870px) {
+
+  min-height: 570px;}
 `;
 export default SkillsStyled;

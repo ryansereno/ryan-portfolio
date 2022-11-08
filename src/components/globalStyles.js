@@ -46,11 +46,12 @@ footer {
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom:20px;
 }
 
 footer a {
-  color: white;
-  font-size: 1.9rem;
+  color: ${({ theme }) => theme.text};
+  font-size: 1.7rem;
   font-family: Nunito, sans-serif;
 }
 footer a:hover {
