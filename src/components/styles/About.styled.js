@@ -11,7 +11,7 @@ const StyledAbout = styled.div`
 
   img {
     vertical-align: middle;
-    border-radius: 5px;
+    border-radius: 10px;
     height:30px;
   }
   img:nth-of-type(1){
