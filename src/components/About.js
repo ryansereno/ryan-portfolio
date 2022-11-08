@@ -16,7 +16,7 @@ const About = () => {
         engineering process around data and computation.
         <br />
         <br />
-        Using UX best practices and my visual design experience, I assemble software into intuitive
+        Using UX principles and my decade of visual design experience, I assemble software into intuitive
         and responsive interfaces.
         <br />
         <br />

@@ -20,7 +20,7 @@ const SocialLinks = () => {
         <img src={linkedinIcon} alt="Ryan's LinkedIn" className="social-icon" />
       </a>
 
-      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="%PUBLIC_URL%/resume.pdf" target="_blank" rel="noopener noreferrer">
         <img src={resumeIcon} alt="Ryan's Resume" className="social-icon" />
       </a>
     </SocialButtons>
