@@ -20,6 +20,7 @@ const PortfolioStyled = styled.section`
     border-radius: 25px;
     padding: 20px;
     justify-content: space-between;
+    align-items: center;
   }
   .project-description {
     width: 70%;
@@ -91,6 +92,10 @@ const PortfolioStyled = styled.section`
     .project-container {
       flex-direction: column;
       align-items: center;
+    }
+    .project-container:nth-of-type(2),
+    .project-container:nth-of-type(4) {
+      flex-direction: column-reverse;
     }
     .project {
       width: 45vw;
