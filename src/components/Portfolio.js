@@ -1,9 +1,8 @@
 import quartetImage from "../assets/quartet-mockup.png";
 import palmImage from "../assets/palm.png";
-import butterImage from "../assets/butter.png";
+import butterLogo from "../assets/butter.png";
 import quartetLogo from "../assets/quartet-logo.jpg";
 import palmLogo from "../assets/palm-logo.png";
-import butterLogo from "../assets/butter-logo.jpg";
 import PortfolioStyled from "./styles/Portfolio.styles";
 import bankingImage from '../assets/banking.png'
 const Portfolio = () => {
@@ -80,7 +79,7 @@ const Portfolio = () => {
               UI Design | Custom React components
               <br />
               <br />
-              Custom React components for online banking and budgeting applications
+              React component library for online banking and budgeting applications
             </p>
           </div>
         </div>
@@ -101,12 +100,7 @@ const Portfolio = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="logo-background">
               <img className="logo" src={butterLogo} alt="" />
-              <img className="logo" src="" alt="" />
-            </div>
-            <img src={butterImage} alt="" />
-            <img className="logo" src="" alt="" />
           </a>
         </div>
       </div>

@@ -57,7 +57,7 @@ const PortfolioStyled = styled.section`
     background-color: var(--teal);
   }
   .project-background-gif {
-    background-color: var(--yellow);
+    background-color: var(--light-green);
   }
   .logo-background {
     opacity: 0;
