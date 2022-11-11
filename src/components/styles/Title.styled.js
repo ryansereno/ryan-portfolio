@@ -44,7 +44,7 @@ h2 {
 .header-letter:nth-child(8) {
   color: var(--teal);
 }
-@media (max-width: 870px) {
+@media (max-width: 640px) {
   h2 {
     font-size: 4rem;
   }
