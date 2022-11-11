@@ -30,7 +30,7 @@ body {
   --light-green: #a1cdc0;
   --dark-blue: #105b95;
 }
-p {
+h4, p {
   font-size: 1.5rem;
   font-family: Nunito, sans-serif;
 }

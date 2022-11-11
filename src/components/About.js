@@ -13,7 +13,7 @@ const About = () => {
         <br />
         <br />
         I use my years of professional experience as a scientist to inform my
-        engineering process around data and computation.
+        engineering of data and computational systems.
         <br />
         <br />
         Using UX principles and my decade of visual design experience, I assemble software into intuitive

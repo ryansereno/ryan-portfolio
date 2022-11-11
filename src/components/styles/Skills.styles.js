@@ -10,7 +10,6 @@ display: flex;
     text-align: center;
     padding-bottom: 100px;
     display: flex;
-    width: 80vw;
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;

@@ -2,23 +2,37 @@ import styled from "styled-components";
 
 const PortfolioStyled = styled.section`
   text-align: center;
-
+  h4 {
+    margin: 0;
+  }
+  p {
+    font-size: 1.2rem;
+  }
   .portfolio-section {
     width: 100%;
     margin: auto;
     display: grid;
-    justify-content: space-around;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
+  }
+  .project-container {
+    display: flex;
+    border: 2px solid beige;
+    border-radius: 25px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .project-description {
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .project {
-    width: 20vw;
     height: 20vw;
-    max-width: 300px;
-    max-height: 300px;
+    width: 20vw;
+    max-width: 200px;
+    max-height: 200px;
     display: flex;
     border-radius: 25px;
-    margin: auto;
     transition: ease-out 150ms;
     position: relative;
     overflow: hidden;
@@ -35,13 +49,13 @@ const PortfolioStyled = styled.section`
   .project:active {
     transform: scale(1);
   }
-  .project:nth-of-type(1) {
+  .project-background-quartet {
     background-color: var(--pink);
   }
-  .project:nth-of-type(2) {
+  .project-background-palm {
     background-color: var(--teal);
   }
-  .project:nth-of-type(3) {
+  .project-background-gif {
     background-color: var(--yellow);
   }
   .logo-background {
@@ -70,11 +84,17 @@ const PortfolioStyled = styled.section`
   @media (max-width: 870px) {
     .portfolio-section {
       grid-template-columns: none;
-      gap:20px;
+      gap: 20px;
     }
-    .project{
-    width:45vw;
-    height:45vw
+  }
+  @media (max-width: 640px) {
+    .project-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .project {
+      width: 45vw;
+      height: 45vw;
     }
   }
 `;

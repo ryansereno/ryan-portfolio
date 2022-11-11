@@ -2,6 +2,7 @@ import linkedinIcon from "../assets/linkedin-icon.png";
 import githubIcon from "../assets/github-icon.png";
 import resumeIcon from "../assets/resume-icon.png";
 import SocialButtons from "./styles/SocialButtons.styled";
+import resume from '../assets/resume.pdf'
 const SocialLinks = () => {
   return (
     <SocialButtons>
@@ -20,7 +21,7 @@ const SocialLinks = () => {
         <img src={linkedinIcon} alt="Ryan's LinkedIn" className="social-icon" />
       </a>
 
-      <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a href={resume} target="_blank" rel="noopener noreferrer">
         <img src={resumeIcon} alt="Ryan's Resume" className="social-icon" />
       </a>
     </SocialButtons>
