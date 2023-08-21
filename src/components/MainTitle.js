@@ -1,7 +1,7 @@
 import StyledTitle from './styles/Title.styled'
 const MainTitle = (props) => {
   let multiColorTitle = [];
-  for (let letter of "Frontend") {
+  for (let letter of "Fullstack") {
     multiColorTitle.push(
       <span key={letter + Math.random()} className="header-letter">
         {letter}
