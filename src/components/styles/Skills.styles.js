@@ -10,6 +10,7 @@ display: flex;
     text-align: center;
     padding-bottom: 100px;
     display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;
