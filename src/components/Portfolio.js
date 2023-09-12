@@ -2,15 +2,43 @@ import quartetImage from "../assets/quartet-mockup.png";
 import palmImage from "../assets/palm.png";
 import butterLogo from "../assets/butter.png";
 import quartetLogo from "../assets/quartet-logo.jpg";
+import elLogo from "../assets/elLogo.png";
+import elImage from "../assets/elScreen.png";
 import palmLogo from "../assets/palm-logo.png";
 import PortfolioStyled from "./styles/Portfolio.styles";
-import bankingImage from '../assets/banking.png'
+import bankingImage from "../assets/banking.png";
 const Portfolio = () => {
   return (
     <PortfolioStyled>
       <h3>Work</h3>
 
       <div className="portfolio-section">
+        <div className="project-container">
+          <div className="project-description">
+            <h4>Estimating Link</h4>
+            <p>
+              Fullstack Development | UI design
+              <br />
+              <br />
+              Complete rebuild of TCLI's flagship application.
+              <br />
+              Conversion of desktop app to a modern performant web application.
+              <br />
+              Vue frontend, ASP.NET/SQL backend
+            </p>
+          </div>
+          <a
+            href="https://tcli.com"
+            className="project project-background-el"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="logo-background">
+              <img className="logo" src={elLogo} alt="" />
+            </div>
+            <img src={elImage} alt="" />
+          </a>
+        </div>
         <div className="project-container">
           <a
             href="https://quartet.ai"
@@ -79,7 +107,8 @@ const Portfolio = () => {
               UI Design | Custom React components
               <br />
               <br />
-              React component library for online banking and budgeting applications
+              React component library for online banking and budgeting
+              applications
             </p>
           </div>
         </div>
@@ -100,7 +129,7 @@ const Portfolio = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-              <img className="logo" src={butterLogo} alt="" />
+            <img className="logo" src={butterLogo} alt="" />
           </a>
         </div>
       </div>

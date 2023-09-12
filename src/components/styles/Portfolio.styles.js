@@ -74,7 +74,7 @@ const PortfolioStyled = styled.section`
     opacity: 1;
   }
   .logo-background:nth-of-type(1) {
-    background-color: black;
+    background-color: #2c4a73;
   }
   .logo-background:nth-of-type(2) {
     background-color: var(--teal);
