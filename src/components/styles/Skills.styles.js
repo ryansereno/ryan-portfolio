@@ -5,6 +5,7 @@ display: flex;
   text-align: center;
   span {
     display: flex;
+    justify-content: center
   }
   .skill-section {
     text-align: center;
