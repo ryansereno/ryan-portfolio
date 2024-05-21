@@ -23,7 +23,6 @@
 .eslintcache
 *.swp
 *.firebase
-firebase.json
 .firebaserc
 
 npm-debug.log*
